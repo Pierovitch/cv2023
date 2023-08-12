@@ -1,0 +1,153 @@
+/*Police d'écritures utilisées*/
+
+@font-face {
+    font-family: 'Rajdhani-semibolt';
+    src: url(/fonts/Rajdhani-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: 'rajdhani';
+    src: url(/fonts/Rajdhani-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(/fonts/Roboto-Regular.ttf)
+}
+
+/*Animations*/
+@keyframes titre {
+    0% {
+        opacity: 0;
+        transform: translate(280px, 0px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0px);
+    }
+}
+
+@keyframes containeur {
+    0% {
+        opacity: 0;
+        transform: translate(0, 280px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0px);
+    }
+}
+
+/*Icones FR/UK des 2 cv*/
+
+header h1 {
+    display: inline-block;
+}
+
+.flag {
+    float: right;
+    color: aliceblue;
+}
+
+img {
+    border-color: white;
+    border-style: double;
+    width: 30px;
+    height: 25px;
+    margin: 10px;
+}
+
+
+/*header*/
+
+
+header {
+    background: url(/images/background2.png);
+    background-size: 1530px 250px;
+    border-radius: 0 0 20px 20px;
+    margin-bottom: 10px;
+    font-family: 'rajdhani';
+}
+
+h1.top {
+    color: aliceblue;
+    font-size: 50px;
+    animation: titre ease 2s;
+
+}
+
+h2.top {
+    color: aliceblue;
+    text-align: center;
+    font-size: 80px;
+    letter-spacing: 15px;
+    animation: titre ease 3.5s;
+    font-family: "Rajdhani-semibolt", sans-serif;
+}
+
+p.top {
+    color: aliceblue;
+    text-align: center;
+    margin: 0;
+    font-size: 20px;
+    animation: titre ease 1.5s;
+
+}
+
+a[href^="mailto:"] {
+    color: white;
+    text-decoration: underline;
+
+}
+
+
+.nom {
+    color: rgb(246, 198, 79);
+    margin: 0px 0px 0px 10px;
+}
+
+
+/*PArtie gauche*/
+
+#leftpart {
+    background-color: rgb(246, 198, 79);
+    animation: containeur ease 2s;
+    border-radius: 20px 20px 20px 20px;
+    font-family: 'Roboto';
+    padding: 15px;
+}
+
+#leftpart h1 {
+    font-size: 25px;
+    text-align: center;
+    letter-spacing: 15px;
+    font-weight: 800;
+}
+
+
+/*Partie droite*/
+
+#rightpart {
+    animation: titre ease 3.5s;
+    font-family: 'Roboto';
+
+}
+
+#rightpart p {
+    font-style: italic;
+}
+
+#rightpart h1 {
+    text-align: center;
+    font-size: 40px;
+    animation: titre ease 5s;
+    font-weight: bold;
+}
+
+#rightpart h2 {
+    font-size: 25px;
+    font-style: italic;
+    font-weight: bold;
+}
